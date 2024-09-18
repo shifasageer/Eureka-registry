@@ -1,0 +1,19 @@
+spring:
+
+  application:
+
+    name: spring-cloud-gateway-app
+            
+server:
+ port: 8070
+ 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
+    gateway:
+      enabled: true
